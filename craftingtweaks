@@ -5,7 +5,7 @@
 
 //A shapeless recipe requires you to provide a name, output and inputs.
 //As you can see, you can also return more than one item (in this case 10), but your ingredients all have to have a stack size of 1!
-craftingTable.addShapeless("chop_ingot", <item:minecraft:gold_nugget> * 10, [<item:minecraft:gold_ingot>, <item:minecraft:flint>]);
+//craftingTable.addShapeless("chop_ingot", <item:minecraft:gold_nugget> * 10, [<item:minecraft:gold_ingot>, <item:minecraft:flint>]);
 
 //A shaped recipe, similar to a shapeless one, requires you to provide a name, output and inputs.
 //Since crafting tables require you to specify where in the crafting grid the items need to go, here's a reference:
@@ -26,14 +26,14 @@ craftingTable.addShapeless("chop_ingot", <item:minecraft:gold_nugget> * 10, [<it
 
 //Here you can see, that you can use <item:minecraft:air> for an empty slot
 //You can also see that this recipe only uses two rows. This means you can either craft this recipe in the first and second row in the crafting grid, or the second and third row.
-# craftingTable.addShaped("diamond_helmet_from_emeralds", <item:minecraft:diamond_helmet>, [[<item:minecraft:emerald>, <item:minecraft:emerald>, <item:minecraft:emerald>], [<item:minecraft:emerald>, <item:minecraft:air>, <item:minecraft:emerald>]]); #
+//craftingTable.addShaped("diamond_helmet_from_emeralds", <item:minecraft:diamond_helmet>, [[<item:minecraft:emerald>, <item:minecraft:emerald>, <item:minecraft:emerald>], [<item:minecraft:emerald>, <item:minecraft:air>, <item:minecraft:emerald>]]); #
 
 
 //You can also break it down into multiple lines as that may make it easier
-craftingTable.addShaped("origin_ball", <item:cobblemon:origin_ball>, [
-    [<item:minecraft:coal_block>, <item:minecraft:coal_block>, <item:minecraft:coal_block>],
-    [<item:minecraft:coal_block>, <item:minecraft:diamond>, <item:minecraft:coal_block>],
-    [<item:minecraft:coal_block>, <item:minecraft:coal_block>, <item:minecraft:coal_block>]]);
+craftingTable.addShaped("origin_ball", <item:cobblemon:ancient_origin_ball>, [
+    [<item:cobblemon:tumblestone>, <item:minecraft:shulker_shell>, <item:cobblemon:tumblestone>],
+    [<item:cobblemon:black_tumblestone>, <item:cobblemon:master_ball>, <item:cobblemon:black_tumblestone>],
+    [<item:cobblemon:tumblestone>, <item:minecraft:shulker_shell>, <item:cobblemon:tumblestone>]]);
 
 
 //These recipes here will use ingredient transformers.
@@ -42,8 +42,8 @@ craftingTable.addShaped("origin_ball", <item:cobblemon:origin_ball>, [
 
 //The transformDamage transformer causes the used Iron sword to take one point of damage whenever crafted
 //Careful, this won't be affected by enchantments.
-craftingTable.addShapeless("exmaple_transformer_anydamage_transform_damage", <item:minecraft:iron_nugget>, [<item:minecraft:iron_sword>.anyDamage().transformDamage()]);
+//craftingTable.addShapeless("exmaple_transformer_anydamage_transform_damage", <item:minecraft:iron_nugget>, [<item:minecraft:iron_sword>.anyDamage().transformDamage()]);
 
 //The reuse transformer causes the item to stay in the grid
 //This recipe would allow you to extract an infinite number of diamonds when you place a diamond Sword in the crafting grid
-craftingTable.addShapeless("example_transformer_reuse", <item:minecraft:diamond>, [<item:minecraft:diamond_axe>.reuse()]);
+//craftingTable.addShapeless("example_transformer_reuse", <item:minecraft:diamond>, [<item:minecraft:diamond_axe>.reuse()]);
