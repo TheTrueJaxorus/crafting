@@ -29,14 +29,14 @@
 //craftingTable.addShaped("diamond_helmet_from_emeralds", <item:minecraft:diamond_helmet>, [[<item:minecraft:emerald>, <item:minecraft:emerald>, <item:minecraft:emerald>], [<item:minecraft:emerald>, <item:minecraft:air>, <item:minecraft:emerald>]]); #
 
 
-craftingTable.addShaped("cobblemon:master_ball", <item:cobblemon:master_ball>, [
+craftingTable.addShaped("cobblemon.master_ball", <item:cobblemon:master_ball>, [
     [<item:minecraft:air>, <item:minecraft:shulker_shell>, <item:minecraft:air>],
     [<item:minecraft:netherite_ingot>, <item:minecraft:diamond_block>, <item:minecraft:netherite_ingot>],
     [<item:minecraft:air>, <item:minecraft:shulker_shell>, <item:minecraft:air>]]);
 
 
 //You can also break it down into multiple lines as that may make it easier
-craftingTable.addShaped("cobblemon:ancient_origin_ball", <item:cobblemon:ancient_origin_ball>, [
+craftingTable.addShaped("cobblemon.ancient_origin_ball", <item:cobblemon:ancient_origin_ball>, [
     [<item:cobblemon:tumblestone>, <item:minecraft:shulker_shell>, <item:cobblemon:tumblestone>],
     [<item:cobblemon:black_tumblestone>, <item:cobblemon:master_ball>, <item:cobblemon:black_tumblestone>],
     [<item:cobblemon:tumblestone>, <item:minecraft:shulker_shell>, <item:cobblemon:tumblestone>]]);
